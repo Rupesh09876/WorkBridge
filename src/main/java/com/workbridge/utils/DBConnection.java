@@ -1,4 +1,4 @@
-package com.workbridge.util;
+package com.workbridge.utils;
 
 import com.workbridge.exception.DatabaseException;
 
