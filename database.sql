@@ -17,12 +17,14 @@ CREATE TABLE IF NOT EXISTS users (
   INDEX idx_status (status)
 );
 
+
 CREATE TABLE IF NOT EXISTS job_categories (
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(100) UNIQUE NOT NULL,
   description TEXT,
   INDEX idx_name (name)
 );
+
 
 CREATE TABLE IF NOT EXISTS employer_profiles (
   id INT AUTO_INCREMENT PRIMARY KEY,
