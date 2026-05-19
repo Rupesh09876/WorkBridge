@@ -23,6 +23,7 @@ public class InputValidator {
     private static final int MAX_EMAIL_LEN = 150;
     private static final int MIN_COVER_LEN = 50;
 
+
     /**
      * Validates an email address.
      */
@@ -57,6 +58,7 @@ public class InputValidator {
     public static boolean isValidUrl(String url) {
         return url != null && url.matches(URL_REGEX);
     }
+
 
     /**
      * Checks if a string is not empty.
@@ -123,6 +125,7 @@ public class InputValidator {
         return null;
     }
 
+    
     /**
      * Sanitizes user input to prevent XSS.
      *
