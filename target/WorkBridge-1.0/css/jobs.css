@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Job Search & Job Detail Specific Styles
+   ========================================================================== */
+
+   .search-bar {
+    background: var(--bg-card);
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+}
+
+.search-bar .form-control {
+    border: none;
+    background: transparent;
+}
+
+.search-bar .form-control:focus {
+    box-shadow: none;
+}
+
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.job-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.job-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary);
+}
+
+.job-card-actions {
+    margin-top: auto;
+}
+
+.job-detail-layout {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .filter-row {
+        flex-direction: column;
+    }
+    .filter-row select {
+        width: 100% !important;
+    }
+    .search-bar {
+        flex-direction: column;
+    }
+}
